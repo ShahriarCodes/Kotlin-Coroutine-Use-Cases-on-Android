@@ -15,7 +15,7 @@ fun main() = runBlocking {
 }
 
 suspend fun coroutine(number: Int, delay: Long) {
-    println("Coroutine $number starts work on ${Thread.currentThread().name}")
+    println("Coroutine $number starts work on ${Thread.currentThread()}")
     delay(delay)
     println("Coroutine $number has finished")
 }
